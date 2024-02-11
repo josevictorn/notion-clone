@@ -1,36 +1,81 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+![cover](.github/app-preview.png)
 
-## Getting Started
+# Notion Clone
 
-First, run the development server:
+Um projeto fullstack inspirado no Notion, construído com Next.js 13, React, Convex e Tailwind. Esta aplicação oferece uma experiência completa, incluindo um editor estilo Notion, banco de dados em tempo real, modos claro e escuro, autenticação, upload e gerenciamento de arquivos, além de muitas outras funcionalidades. Totalmente responsivo para dispositivos móveis e com a capacidade de publicar suas notas na web. Perfeito para organizar suas ideias e colaborar em equipe.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Funcionalidades
+
+- Banco de dados em tempo real 🔗
+- Editor estilo Notion 📝
+- Modo claro e escuro 🌓
+- Documentos infinitos e hierarquia de filhos 🌲
+- Trash can & soft delete 🗑️
+- Autenticação 🔐
+- Upload de arquivos
+- Exclusão de arquivos
+- Substituição de arquivos
+- Ícones para cada documento (alterações em tempo real) 🌠
+- Sidebar expansível ➡️🔀⬅️
+- Responsividade para dispositivos móveis 📱
+- Landing page 🛬
+- Imagem de capa para cada documento 🖼️
+- Recuperação de arquivos excluídos 🔄📄
+
+## Tecnologia utilizadas
+
+- Next.js 13
+- Typescript
+- Convex
+- TailwindCSS
+- ShadcnUI
+- Prisma
+- Clerk
+- Zod
+- Zustand
+
+## Execução do projeto
+
+### Clone o repositório
+
+```shell
+git clone https://github.com/josevictorn/notion-clone.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Instale as dependências
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```shell
+npm i
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Configure o arquivo .env
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+```js
+# Deployment used by `npx convex dev`
+CONVEX_DEPLOYMENT=
+NEXT_PUBLIC_CONVEX_URL=
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+CLERK_SECRET_KEY=
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+EDGE_STORE_ACCESS_KEY=
+EDGE_STORE_SECRET_KEY=
+```
 
-## Deploy on Vercel
+### Configure o Convex
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```shell
+npx convex dev
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```
+
+### Start a aplicação
+
+```shell
+npm run dev
+```
+
+## Autor
+
+Feito com amor por [@josevictorn](https://github.com/josevictorn)
